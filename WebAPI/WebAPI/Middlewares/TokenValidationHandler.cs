@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace WebAPI.Controllers
+namespace intranet.WebAPI.Controllers
 {
     public class TokenValidationHandler : DelegatingHandler
     {

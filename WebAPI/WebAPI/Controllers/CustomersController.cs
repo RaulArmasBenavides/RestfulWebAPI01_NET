@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace WebAPI.Controllers
+namespace intranet.WebAPI.Controllers
 {
     [Authorize]
     [RoutePrefix("api/customers")]

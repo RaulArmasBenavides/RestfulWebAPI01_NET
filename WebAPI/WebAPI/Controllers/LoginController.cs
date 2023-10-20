@@ -2,9 +2,9 @@
 using System.Net;
 using System.Threading;
 using System.Web.Http;
-using WebAPI.Models;
+using intranet.WebAPI.Models;
 
-namespace WebAPI.Controllers
+namespace intranet.WebAPI.Controllers
 {
     [AllowAnonymous]
     [RoutePrefix("api/login")]

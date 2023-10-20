@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebAPI.Models
+namespace intranet.WebAPI.Models
 {
     public class LoginRequest
     {

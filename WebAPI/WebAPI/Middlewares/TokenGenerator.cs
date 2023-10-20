@@ -6,7 +6,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Web;
 
-namespace WebAPI.Controllers
+namespace intranet.WebAPI.Controllers
 {
     public class TokenGenerator
     {
