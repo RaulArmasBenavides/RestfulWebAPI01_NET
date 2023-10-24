@@ -1,17 +1,17 @@
-﻿namespace intranet.infrastructure.Migrations
+﻿namespace intranet.infrastructure.OracleMigrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class firstMigration : DbMigration
+    public partial class Initial : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.Alumnoes",
+                "VENTA.Alumnoes",
                 c => new
                     {
-                        IdAlumno = c.Int(nullable: false, identity: true),
+                        IdAlumno = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
                         ApePatAlumno = c.String(),
                         ApeMatAlumno = c.String(),
                         NomAlumno = c.String(),
@@ -29,7 +29,7 @@
         
         public override void Down()
         {
-            DropTable("dbo.Alumnoes");
+            DropTable("VENTA.Alumnoes");
         }
     }
 }

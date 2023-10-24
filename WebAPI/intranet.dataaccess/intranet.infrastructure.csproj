@@ -53,6 +53,9 @@
     <Reference Include="Oracle.ManagedDataAccess, Version=4.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <HintPath>..\packages\Oracle.ManagedDataAccess.21.12.0\lib\net462\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.21.9.0\lib\net462\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -97,11 +100,11 @@
   <ItemGroup>
     <Compile Include="Data\OracleDBContext.cs" />
     <Compile Include="Data\SQLContext.cs" />
-    <Compile Include="Migrations\202310231212536_first Migration.cs" />
-    <Compile Include="Migrations\202310231212536_first Migration.designer.cs">
-      <DependentUpon>202310231212536_first Migration.cs</DependentUpon>
+    <Compile Include="OracleMigrations\202310240058181_Initial.cs" />
+    <Compile Include="OracleMigrations\202310240058181_Initial.designer.cs">
+      <DependentUpon>202310240058181_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="OracleMigrations\Configuration.cs" />
     <Compile Include="Repository\ADO\ActividadDAO.cs" />
     <Compile Include="Repository\ADO\AsistenciasDAO.cs" />
     <Compile Include="Repository\ADO\Constantes.cs" />
@@ -145,8 +148,8 @@
     <Folder Include="Repository\EFModel\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202310231212536_first Migration.resx">
-      <DependentUpon>202310231212536_first Migration.cs</DependentUpon>
+    <EmbeddedResource Include="OracleMigrations\202310240058181_Initial.resx">
+      <DependentUpon>202310240058181_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

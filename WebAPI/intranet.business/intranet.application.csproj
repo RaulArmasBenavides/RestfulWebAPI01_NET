@@ -78,9 +78,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\intranet.dataaccess\intranet.intrastructure.csproj">
+    <ProjectReference Include="..\intranet.dataaccess\intranet.infrastructure.csproj">
       <Project>{B8645D16-8696-4A9F-BED0-84168EC9C28F}</Project>
-      <Name>intranet.intrastructure</Name>
+      <Name>intranet.infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\intranet.entity\intranet.core.csproj">
       <Project>{D8AC91FE-8FF5-4C49-8C80-01C79B64C385}</Project>

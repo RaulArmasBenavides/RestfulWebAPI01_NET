@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intranet.ServiceWCF", "intr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intranet.application", "intranet.business\intranet.application.csproj", "{02D17C4C-177C-49DD-A68E-7AABAD1FAE4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intranet.intrastructure", "intranet.dataaccess\intranet.intrastructure.csproj", "{B8645D16-8696-4A9F-BED0-84168EC9C28F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intranet.infrastructure", "intranet.dataaccess\intranet.infrastructure.csproj", "{B8645D16-8696-4A9F-BED0-84168EC9C28F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intranet.debugger", "intranet.service\intranet.debugger.csproj", "{E6DDC900-C9AE-410F-98A0-509CAB49A777}"
 EndProject
