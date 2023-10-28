@@ -8,9 +8,7 @@ namespace intranet.business
     public class Cursobll
     {
 
-        //variable de la clase MODEL
         CursoDAO dao;
-        // constructor
         public Cursobll()
         {
             dao = new CursoDAO();
@@ -31,8 +29,6 @@ namespace intranet.business
         {
             //dao.delete(pro);
         }
-
-   
 
         public List<Curso> CursoListar()
         {

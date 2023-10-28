@@ -60,17 +60,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActividadBll.cs" />
-    <Compile Include="AlumnoBll.cs" />
-    <Compile Include="AsistenciasBll.cs" />
-    <Compile Include="MatriculaBll.cs" />
-    <Compile Include="Cursobll.cs" />
-    <Compile Include="EquipoBll.cs" />
-    <Compile Include="ListaEquiposBll.cs" />
-    <Compile Include="ParticipanteBll.cs" />
-    <Compile Include="SedeBll.cs" />
-    <Compile Include="UsuarioBll.cs" />
-    <Compile Include="_boIntranet.cs" />
+    <Compile Include="interfaces\IAlumnoService.cs" />
+    <Compile Include="interfaces\ICursoService.cs" />
+    <Compile Include="services\ActividadBll.cs" />
+    <Compile Include="services\AlumnoBll.cs" />
+    <Compile Include="services\AsistenciasBll.cs" />
+    <Compile Include="services\MatriculaBll.cs" />
+    <Compile Include="services\Cursobll.cs" />
+    <Compile Include="services\EquipoBll.cs" />
+    <Compile Include="services\ListaEquiposBll.cs" />
+    <Compile Include="services\ParticipanteBll.cs" />
+    <Compile Include="services\SedeBll.cs" />
+    <Compile Include="services\UsuarioBll.cs" />
+    <Compile Include="services\_boIntranet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +89,7 @@
       <Name>intranet.core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
