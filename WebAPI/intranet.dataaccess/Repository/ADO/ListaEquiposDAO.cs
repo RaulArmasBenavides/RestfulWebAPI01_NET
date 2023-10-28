@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
-using intranet.service;
 using intranet.entity;
 using System;
-using intranet.dataaccess.Repository.IRepository;
+using intranet.infrastructure.Repository.IRepository;
 
 namespace intranet.dataaccess
 {

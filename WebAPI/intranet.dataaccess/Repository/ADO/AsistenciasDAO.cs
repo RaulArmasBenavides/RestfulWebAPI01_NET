@@ -1,11 +1,10 @@
-﻿using intranet.dataaccess.Repository.IRepository;
-using intranet.entity;
-using intranet.service;
+﻿using intranet.entity;
+using intranet.infrastructure;
+using intranet.infrastructure.Repository.IRepository;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 
 namespace intranet.dataaccess
 {

@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using intranet.entity;
-using intranet.service;
 using System.Data.SqlClient;
 using System.Data;
-using intranet.dataaccess.Repository.IRepository;
+using intranet.infrastructure.Repository.IRepository;
 
-namespace intranet.dataaccess
+namespace intranet.infrastructure
 {
     public class SedeDAO : ISedeRepository
     {

@@ -1,16 +1,15 @@
-﻿using intranet.dataaccess;
+﻿using intranet.business.interfaces;
+using intranet.dataaccess;
 using intranet.entity;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace intranet.business
 {
-    public class AsistenciasBll
+    public class AsistenciasBll : IAsistenciaService
     {
 
-        //variable de la clase usuarioeDAO
         AsistenciasDAO dao;
-        //constructor
         public AsistenciasBll()
         {
             dao = new AsistenciasDAO();

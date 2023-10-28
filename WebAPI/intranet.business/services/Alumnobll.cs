@@ -1,13 +1,13 @@
-﻿using intranet.dataaccess.Factory;
-using intranet.entity;
-using intranet.service;
+﻿using intranet.entity;
+using intranet.infrastructure.Factory;
+using intranet.infrastructure.Repository.IRepository;
 using System.Collections.Generic;
 
 namespace intranet.business
 {
     public class AlumnoBll
     {
-        private readonly IAlumnoDataAccess _AluDataAccess;
+        private readonly IAlumnoRepository _AluDataAccess;
         public AlumnoBll()
         {
             _AluDataAccess = DataAccessFactory.GetProductDataAccessObj();

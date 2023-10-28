@@ -13,7 +13,10 @@ namespace intranet.infrastructure.Data
         public SQLContext() : base("SQLContext")
         {
         }
-
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Alumno>().ToTable("Alumnos");
+        }
         public DbSet<Alumno> Alumnos { get; set; }
     }
 }

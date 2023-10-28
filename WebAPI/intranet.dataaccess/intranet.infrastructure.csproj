@@ -114,11 +114,24 @@
     <Compile Include="Repository\ADO\ParticipanteDAO.cs" />
     <Compile Include="Repository\ADO\SedeDAO.cs" />
     <Compile Include="Repository\ADO\UsuarioDAO.cs" />
-    <Compile Include="Repository\IRepository\IAlumnoDataAccess.cs" />
+    <Compile Include="Repository\IRepository\IUsuarioRepository.cs" />
+    <Compile Include="Repository\UsuarioRepository.cs" />
+    <Compile Include="Repository\AlumnoRepository.cs" />
+    <Compile Include="Repository\IRepository\IAlumnoRepository.cs" />
     <Compile Include="Repository\IRepository\IParticipantRepository.cs" />
     <Compile Include="Repository\IRepository\IRepository.cs" />
     <Compile Include="Repository\IRepository\ISedeRepository.cs" />
     <Compile Include="Repository\IRepository\IUsuarioDataAccess.cs" />
+    <Compile Include="Repository\SedeRepository.cs" />
+    <Compile Include="SQLMigrations\202310281415465_Initial.cs" />
+    <Compile Include="SQLMigrations\202310281415465_Initial.designer.cs">
+      <DependentUpon>202310281415465_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLMigrations\202310281421006_Initial2.cs" />
+    <Compile Include="SQLMigrations\202310281421006_Initial2.designer.cs">
+      <DependentUpon>202310281421006_Initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLMigrations\Configuration.cs" />
     <Compile Include="UnitOfWork\IUnitOfWorkContainer.cs" />
     <Compile Include="UnitOfWork\UnitOfWorkContainer.cs" />
     <Compile Include="_doIntranet.cs" />
@@ -140,12 +153,16 @@
       <Name>intranet.core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repository\EFModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="OracleMigrations\202310240058181_Initial.resx">
       <DependentUpon>202310240058181_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLMigrations\202310281415465_Initial.resx">
+      <DependentUpon>202310281415465_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLMigrations\202310281421006_Initial2.resx">
+      <DependentUpon>202310281421006_Initial2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

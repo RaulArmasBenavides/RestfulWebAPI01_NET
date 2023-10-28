@@ -1,5 +1,7 @@
 ﻿using intranet.dataaccess;
 using intranet.entity;
+using intranet.infrastructure.Repository;
+using intranet.infrastructure.Repository.IRepository;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
@@ -7,14 +9,12 @@ namespace intranet.business
 {
     public class UsuarioBll
     {
-        //variable de la clase usuarioeDAO
-        UsuarioDAO dao;
-        //constructor
+       
+        IUsuarioRepository dao;
         public UsuarioBll()
         {
-            dao = new UsuarioDAO();
+            dao = new UsuarioRepository();
         }
-        ////metodos de persistencia de datos en sqlserver
         //public void usuarioAdicionar(usp_usuarios_listar_all_Result pro)
         //{
         //    try
@@ -74,7 +74,8 @@ namespace intranet.business
 
         public bool validarusuario(Usuario u)
         {
-            return dao.valida_usuario_exists(u);
+            //return dao.valida_usuario_exists(u);
+            return true;
         }
         //public ObjectResult<usp_ValidaUsuario_Result> UsuarioValidar(usp_usuarios_listar_all_Result usuario)
         //{

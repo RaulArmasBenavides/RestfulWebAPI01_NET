@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace intranet.dataaccess.Repository.IRepository
+namespace intranet.infrastructure.Repository.IRepository
 {
     public interface IRepository<T>
     {
         void Create(T o);
         void Update(T o);
-        //void Delete(T o);
-
         void Delete(int id);
         T Find(T o);
         T FindById(int o);

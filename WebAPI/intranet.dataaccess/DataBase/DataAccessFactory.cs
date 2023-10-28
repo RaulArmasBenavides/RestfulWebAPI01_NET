@@ -1,12 +1,12 @@
-﻿using intranet.service;
-
-namespace intranet.dataaccess.Factory
+﻿using intranet.infrastructure.Repository;
+using intranet.infrastructure.Repository.IRepository;
+namespace intranet.infrastructure.Factory
 {
     public abstract class DataAccessFactory
     {
-        public static IAlumnoDataAccess GetProductDataAccessObj()
+        public static IAlumnoRepository GetProductDataAccessObj()
         {
-            return new AlumnoDAO();
+            return new AlumnoRepository();
         }
 
     }

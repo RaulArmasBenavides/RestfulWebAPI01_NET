@@ -1,17 +1,18 @@
 ﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using intranet.dataaccess;
-using intranet.dataaccess.Repository.IRepository;
+using intranet.business.interfaces;
 using intranet.entity;
+using intranet.infrastructure.Repository;
+using intranet.infrastructure.Repository.IRepository;
 
 namespace intranet.business
 {
-    public class SedeBll
+    public class SedeBll : ISedeService
     {
         ISedeRepository dao;
         public SedeBll()
         {
-            dao = new SedeDAO();
+            dao = new SedeRepository();
         }
 
         public void SedeAdicionar(Sede pro)

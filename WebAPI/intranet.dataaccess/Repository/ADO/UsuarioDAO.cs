@@ -1,12 +1,12 @@
 ﻿using System;
-using intranet.service;
 using intranet.entity;
 using System.Data.SqlClient;
 using System.Data;
 using System.Collections.Generic;
+using intranet.infrastructure.Repository.IRepository;
 //using app.erp.rmab.common;
 
-namespace intranet.dataaccess
+namespace intranet.infrastructure
 {
     public class UsuarioDAO : IUsuarioDataAccess
     {

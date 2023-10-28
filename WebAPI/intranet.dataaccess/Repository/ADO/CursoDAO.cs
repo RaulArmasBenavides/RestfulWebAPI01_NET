@@ -1,6 +1,6 @@
-﻿using intranet.dataaccess.Repository.IRepository;
-using intranet.entity;
-using intranet.service;
+﻿using intranet.entity;
+using intranet.infrastructure;
+using intranet.infrastructure.Repository.IRepository;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,7 +10,6 @@ namespace intranet.dataaccess
 {
     public class CursoDAO: IRepository<Curso>
     {
-        //variables
         Curso[] lista = new Curso[100];
         static int n = 0;
             //, cont = 0;

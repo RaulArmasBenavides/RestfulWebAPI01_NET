@@ -1,9 +1,4 @@
-﻿
-using intranet.service;
-using System.Configuration;
-
-
-namespace intranet.dataaccess.DataBase
+﻿namespace intranet.dataaccess.DataBase
 {
     public class AccesoDB  
     {   

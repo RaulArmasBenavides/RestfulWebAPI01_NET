@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using intranet.service;
 using intranet.entity;
 using System;
- 
+using intranet.infrastructure.Repository.IRepository;
 
 namespace intranet.dataaccess.Factory
 {
-    public class AlumnoDAO : IAlumnoDataAccess
+    public class AlumnoDAO : IAlumnoRepository
     {
         SqlConnection cn;
         public string CadenaConexion { get; set; }

@@ -61,7 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="interfaces\IAlumnoService.cs" />
+    <Compile Include="interfaces\IAsistenciaService.cs" />
     <Compile Include="interfaces\ICursoService.cs" />
+    <Compile Include="interfaces\ISedeService.cs" />
     <Compile Include="services\ActividadBll.cs" />
     <Compile Include="services\AlumnoBll.cs" />
     <Compile Include="services\AsistenciasBll.cs" />
