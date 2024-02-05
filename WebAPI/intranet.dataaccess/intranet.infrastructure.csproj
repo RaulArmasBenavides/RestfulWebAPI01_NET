@@ -96,9 +96,9 @@
   <ItemGroup>
     <Compile Include="Data\OracleDBContext.cs" />
     <Compile Include="Data\SQLContext.cs" />
-    <Compile Include="OracleMigrations\202310240058181_Initial.cs" />
-    <Compile Include="OracleMigrations\202310240058181_Initial.designer.cs">
-      <DependentUpon>202310240058181_Initial.cs</DependentUpon>
+    <Compile Include="OracleMigrations\202402040024463_Initial3.cs" />
+    <Compile Include="OracleMigrations\202402040024463_Initial3.designer.cs">
+      <DependentUpon>202402040024463_Initial3.cs</DependentUpon>
     </Compile>
     <Compile Include="OracleMigrations\Configuration.cs" />
     <Compile Include="Repository\ADO\ActividadDAO.cs" />
@@ -155,8 +155,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="OracleMigrations\202310240058181_Initial.resx">
-      <DependentUpon>202310240058181_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="OracleMigrations\202402040024463_Initial3.resx">
+      <DependentUpon>202402040024463_Initial3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SQLMigrations\202310281415465_Initial.resx">
       <DependentUpon>202310281415465_Initial.cs</DependentUpon>

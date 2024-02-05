@@ -18,7 +18,7 @@ namespace intranet.infrastructure.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Set a default schema for ALL tables
-            modelBuilder.HasDefaultSchema("VENTA");
+            modelBuilder.HasDefaultSchema("C##MOVIESUSER");
         }
         public DbSet<Alumno> Alumnos {get; set;}
     }

@@ -3,12 +3,12 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class Initial3 : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "VENTA.Alumnoes",
+                "C##MOVIESUSER.Alumnoes",
                 c => new
                     {
                         IdAlumno = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
@@ -29,7 +29,7 @@
         
         public override void Down()
         {
-            DropTable("VENTA.Alumnoes");
+            DropTable("C##MOVIESUSER.Alumnoes");
         }
     }
 }
